@@ -199,3 +199,41 @@ button {
 .header-bloc {
   display: flex;
 }
+/*burger-menu*/
+.backdrop {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--navy-blue-modal);
+  transition: opacity var(--trans--), visibility var(--trans--);
+
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 288px;
+  min-height: 623px;
+  padding: 72px 16px 24px 16px;
+
+  border-radius: 4px;
+  background: var(--dairy-modal-background);
+
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform var(--trans--);
+}
