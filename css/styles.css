@@ -2,6 +2,11 @@
   --color-text: rgba(255, 255, 255, 1);
   --background-color: rgba(0, 0, 0, 1);
   --light-gray: #d0d0d0;
+  --gray: #969696;
+  --nav-background-color: rgba(15, 15, 15, 1);
+  --hf-background-color: rgba(31, 31, 31, 1);
+
+  --trans--: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   color: var(--color-text);
@@ -13,6 +18,7 @@ a {
   text-decoration: none;
   width: 100%;
   height: auto;
+  padding: 0;
 }
 
 img {
@@ -69,4 +75,127 @@ button {
   line-height: normal;
   letter-spacing: 1.8px;
   text-transform: uppercase;
+}
+
+.container {
+  max-width: 375px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+  }
+}
+
+/*header*/
+.header.container {
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.header-list {
+  display: flex;
+  margin-right: 32px;
+}
+.header-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-logo {
+  width: 104px;
+  height: 49px;
+  margin-right: ;
+}
+.text-heder {
+  color: var(--gray);
+  font-size: 12px;
+  line-height: normal;
+  margin-left: 15px;
+  margin-right: auto;
+  padding: 14px 0px 14px 0px;
+}
+.text-heder.vchid {
+  margin-left: 19px;
+}
+.top-line {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+.top-bloc {
+  display: flex;
+}
+.svhead {
+  fill: var(--gray);
+}
+.header-button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: var(--trans--);
+}
+.header-button:hover,
+.header-button:focus {
+  transform: scale(2);
+}
+.header-button.koshyk {
+  margin-right: 40px;
+}
+.link {
+  width: 14px;
+  height: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.svghead {
+  fill: var(--color-text);
+  border-radius: none;
+}
+.header-link {
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.header-item {
+  padding: 31px 18px 31px 18px;
+  transition: var(--trans--);
+}
+.header-item:hover,
+.header-item:focus {
+  background-color: var(--hf-background-color);
+}
+
+.heder-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--nav-background-color);
+}
+.header-bloc {
+  display: flex;
 }
