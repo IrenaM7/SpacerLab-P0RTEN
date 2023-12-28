@@ -59,7 +59,7 @@ h4 {
   font-weight: 400;
   line-height: normal;
 }
-.spanh4 {
+.p-new-collection {
   color: var(--light-gray);
   font-family: Playfair Display;
   font-size: 16px;
@@ -69,13 +69,15 @@ h4 {
 }
 button {
   color: var(--color-text);
-  background-color: var(--background-color);
+  background-color: transparent;
   text-align: center;
   font-size: 18px;
   font-style: normal;
   line-height: normal;
   letter-spacing: 1.8px;
   text-transform: uppercase;
+  border-color: var(--color-text);
+  padding: 12px 28px;
 }
 
 .container {
@@ -109,6 +111,7 @@ button {
 }
 
 /*header*/
+
 .header.container {
   align-items: center;
 }
@@ -144,6 +147,11 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 10px 0;
 }
 .header-logo {
   width: 104px;
@@ -193,6 +201,7 @@ button {
 .header-button.top {
   margin: 0px 5px;
 }
+/*burger-menu*/
 .header-burger-btn {
   position: relative;
   width: 40px;
@@ -203,9 +212,9 @@ button {
 }
 .menu {
   position: absolute;
-  left: -250px;
+  right: -50%;
   top: 0;
-  width: 250px;
+  width: 100px;
   background-color: transparent;
   padding: 140px 20px 20px 20px;
   transition: transform.5s;
@@ -214,7 +223,7 @@ button {
   display: block;
 }
 .head.open .menu {
-  transform: translateX(100%);
+  transform: translateX(-225%);
 }
 @media screen and (min-width: 768px) {
   .header-burger-btn {
@@ -260,14 +269,7 @@ button {
 .svghead {
   fill: var(--color-text);
 }
-.menu-link {
-  display: block;
-  color: var(--color-text);
-  font-size: 20px;
-  line-height: normal;
-  text-transform: uppercase;
-  padding: 10px 0;
-}
+
 .header-item {
   padding: 31px 18px 31px 18px;
   transition: var(--trans--);
@@ -289,4 +291,214 @@ button {
   justify-content: space-between;
 }
 
-/*burger-menu*/
+/*abuot*/
+.about-cont {
+  background: linear-gradient(
+      0deg,
+      rgba(15, 15, 15, 0.5) 0%,
+      rgba(15, 15, 15, 0.5) 100%
+    ),
+    url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .about-second {
+    display: none;
+  }
+  .about-third {
+    display: none;
+  }
+  .about-fourth {
+    display: none;
+  }
+  .about-fifth {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-first {
+    display: none;
+  }
+  .about-second {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-second {
+    display: none;
+  }
+  .about-third {
+    display: block;
+  }
+  .about-fourth {
+    display: none;
+  }
+  .about-fifth {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about-third {
+    display: none;
+  }
+  .about-fourth {
+    display: block;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .about-first {
+    display: none;
+  }
+  .about-second {
+    display: none;
+  }
+  .about-third {
+    display: none;
+  }
+  .about-fourth {
+    display: none;
+  }
+  .about-fifth {
+    display: block;
+  }
+}
+/*new-collection*/
+@media screen and (min-width: 768px) {
+  .new-collection {
+    display: block;
+  }
+  .collection-list {
+    display: block;
+  }
+}
+.new-collection-katalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 375px;
+  padding: 375px 20px 100px 20px;
+  background: linear-gradient(
+      0deg,
+      rgba(15, 15, 15, 0.5) 0%,
+      rgba(15, 15, 15, 0.5) 100%
+    ),
+    url(../images/Rectangle\ 8\ .jpg);
+  background-repeat: no-repeat;
+}
+
+@media only screen and(min-resolution:192dpi) {
+  .new-collection-katalog {
+    background: linear-gradient(
+        0deg,
+        rgba(15, 15, 15, 0.5) 0%,
+        rgba(15, 15, 15, 0.5) 100%
+      ),
+      url(../images/Rectangle\ 8\@2x .jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .new-collection-katalog {
+    max-width: 768px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(15, 15, 15, 0.5) 0%,
+        rgba(15, 15, 15, 0.5) 100%
+      ),
+      url(../images/Rectangle\ 8\ .jpg);
+  }
+}
+@media only screen and(min-resolution:192dpi) {
+  .new-collection-katalog {
+    background: linear-gradient(
+        0deg,
+        rgba(15, 15, 15, 0.5) 0%,
+        rgba(15, 15, 15, 0.5) 100%
+      ),
+      url(../images/Rectangle\ 8\@2x .jpg);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .new-collection-katalog {
+    padding: 484px 100px 100px 100px;
+    max-width: 500px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(15, 15, 15, 0.5) 0%,
+        rgba(15, 15, 15, 0.5) 100%
+      ),
+      url(../images/Rectangle\ 8\ .jpg);
+  }
+}
+@media only screen and(min-resolution:192dpi) {
+  .new-collection-katalog {
+    background: linear-gradient(
+        0deg,
+        rgba(15, 15, 15, 0.5) 0%,
+        rgba(15, 15, 15, 0.5) 100%
+      ),
+      url(../images/Rectangle\ 8\@2x .jpg);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .new-collection-katalog {
+    max-width: 880px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(15, 15, 15, 0.5) 0%,
+        rgba(15, 15, 15, 0.5) 100%
+      ),
+      url(../images/Rectangle\ 8\ .jpg);
+  }
+}
+@media only screen and(min-resolution:192dpi) {
+  .new-collection-katalog {
+    background: linear-gradient(
+        0deg,
+        rgba(15, 15, 15, 0.5) 0%,
+        rgba(15, 15, 15, 0.5) 100%
+      ),
+      url(../images/Rectangle\ 8\@2x .jpg);
+  }
+}
+@media screen and (min-width: 1920px) {
+  .new-collection-katalog {
+    padding: 484px 252px 100px 252px;
+    max-width: 880px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(15, 15, 15, 0.5) 0%,
+        rgba(15, 15, 15, 0.5) 100%
+      ),
+      url(../images/Rectangle\ 8\ .jpg);
+  }
+}
+@media only screen and(min-resolution:192dpi) {
+  .new-collection-katalog {
+    background: linear-gradient(
+        0deg,
+        rgba(15, 15, 15, 0.5) 0%,
+        rgba(15, 15, 15, 0.5) 100%
+      ),
+      url(../images/Rectangle\ 8\@2x .jpg);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .new-collection {
+    display: flex;
+  }
+  .collection-list {
+    display: flex;
+    gap: 50px;
+  }
+}
+.collection-bloc {
+  padding: 93px 80px;
+}
+.p-new-collection {
+  color: var(--light-gray);
+  font-family: Playfair Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
