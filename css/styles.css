@@ -321,6 +321,15 @@ button {
   .about-second {
     display: block;
   }
+  .about-third {
+    display: none;
+  }
+  .about-fourth {
+    display: none;
+  }
+  .about-fifth {
+    display: none;
+  }
 }
 @media screen and (min-width: 1024px) {
   .about-second {
@@ -362,15 +371,9 @@ button {
   }
 }
 /*new-collection*/
-@media screen and (min-width: 768px) {
-  .new-collection {
-    display: block;
-  }
-  .collection-list {
-    display: block;
-  }
-}
+
 .new-collection-katalog {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -419,8 +422,8 @@ button {
 }
 @media screen and (min-width: 1024px) {
   .new-collection-katalog {
-    padding: 484px 100px 100px 100px;
-    max-width: 500px;
+    padding: 484px 252px 100px 252px;
+    max-width: 880px;
     background-image: linear-gradient(
         0deg,
         rgba(15, 15, 15, 0.5) 0%,
@@ -441,6 +444,7 @@ button {
 }
 @media screen and (min-width: 1440px) {
   .new-collection-katalog {
+    padding: 484px 100px 100px 100px;
     max-width: 880px;
     background-image: linear-gradient(
         0deg,
@@ -482,18 +486,61 @@ button {
       url(../images/Rectangle\ 8\@2x .jpg);
   }
 }
+.new-collection {
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (min-width: 1024px) {
   .new-collection {
-    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .new-collection {
+    flex-direction: row;
+  }
+}
+
+.collection-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.collection-bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 93px 80px;
+  gap: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .collection-bloc {
+    padding: 30px 10px;
+    gap: 20px;
   }
   .collection-list {
-    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .collection-bloc {
+    padding: 90px 50px;
     gap: 50px;
   }
 }
-.collection-bloc {
-  padding: 93px 80px;
+@media screen and (min-width: 1920px) {
+  .collection-bloc {
+    padding: 80px 100px 90px 100px;
+  }
+  .collection-list {
+    gap: 60px;
+  }
 }
+
 .p-new-collection {
   color: var(--light-gray);
   font-family: Playfair Display;
@@ -501,4 +548,104 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.new-collection-katalog span {
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: var(--color-text);
+  left: 35%;
+  bottom: 170px;
+}
+@media screen and (min-width: 768px) {
+  .new-collection-katalog span {
+    left: 42.5%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .new-collection-katalog span {
+    left: 37%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .new-collection-katalog span {
+    left: 42.5%;
+  }
+}
+.new-collection-title {
+  margin: 0;
+  display: inline-flex;
+}
+/***********collection************/
+.collection {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1440px) {
+  .collection {
+    flex-direction: row;
+  }
+}
+.collection-articl {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 15px;
+}
+@media screen and (min-width: 768px) {
+  .collection-articl {
+    padding: 50px 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .collection-articl {
+    padding: 70px 100px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .collection-articl {
+    padding: 70px 50px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .collection-articl {
+    padding: 100px 180px;
+  }
+}
+.collection-articl span {
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: var(--color-text);
+  top: 130px;
+}
+@media screen and (min-width: 1024px) {
+  .collection-articl span {
+    top: 150px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .collection-articl span {
+    top: 180px;
+  }
+}
+.articl {
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1440px) {
+  .articl {
+    width: 628px;
+  }
+  .collection img {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .collection img {
+    max-width: 936px;
+  }
 }
