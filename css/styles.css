@@ -799,7 +799,12 @@ button {
   max-width: 628px;
 }
 .articles-div {
-  padding: 50px 150px;
+  padding: 50px 10px;
+}
+@media screen and (min-width: 768px) {
+  .articles-div {
+    padding: 50px 150px;
+  }
 }
 .articles-title {
   margin: 0;
