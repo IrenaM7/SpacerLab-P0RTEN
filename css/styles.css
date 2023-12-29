@@ -679,8 +679,8 @@ button {
 }
 @media screen and (min-width: 768px) {
   .new-goods {
-    padding-left: 125px;
-    padding-right: 125px;
+    padding-left: 95px;
+    padding-right: 95px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -732,7 +732,7 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 40px;
-    column-gap: 50px;
+    column-gap: 23px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -765,13 +765,21 @@ button {
 }
 /******************articles********************/
 .articles-section {
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
+.articles-bl {
+  margin-top: 95px;
+}
 @media screen and (min-width: 1024px) {
   .articles-bloc {
     display: flex;
+  }
+  .articles-section {
+    gap: 0;
   }
 }
 
@@ -790,6 +798,7 @@ button {
 .articles-fifth {
   display: block;
 }
+
 .articles-bottom {
   display: flex;
   justify-content: space-between;
@@ -806,10 +815,37 @@ button {
     padding: 50px 150px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .articles-div {
+    padding: 10px 10px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .articles-div {
+    padding: 50px 50px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .articles-div {
+    padding: 50px 150px;
+  }
+}
 .articles-title {
   margin: 0;
 }
 .articles {
   margin-top: 14px;
   margin-bottom: 38px;
+}
+@media screen and (min-width: 1024px) {
+  .articles {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .articles {
+    margin-top: 14px;
+    margin-bottom: 25px;
+  }
 }
