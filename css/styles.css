@@ -763,3 +763,48 @@ button {
 .new-goods-title {
   margin: 0;
 }
+/******************articles********************/
+.articles-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .articles-bloc {
+    display: flex;
+  }
+}
+
+.articles-first {
+  display: none;
+}
+.articles-second {
+  display: none;
+}
+.articles-third {
+  display: none;
+}
+.articles-fourth {
+  display: none;
+}
+.articles-fifth {
+  display: block;
+}
+.articles-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.articles-tumb {
+  max-width: 628px;
+}
+.articles-div {
+  padding: 50px 150px;
+}
+.articles-title {
+  margin: 0;
+}
+.articles {
+  margin-top: 14px;
+  margin-bottom: 38px;
+}
