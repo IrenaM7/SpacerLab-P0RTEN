@@ -888,6 +888,7 @@ button {
   padding-bottom: 65px;
   gap: 50px;
   align-items: center;
+   
 
 }
 .footer-list {
@@ -895,12 +896,14 @@ button {
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 300px;
-} 
+}
+  
 @media screen and (min-width: 1024px){
   .footer-bloc{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+    align-items: normal;
   }
 
 }
