@@ -901,6 +901,11 @@ button {
     top: 150px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .our-brands span {
+    top: 215px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .our-brands span {
     top: 185px;
