@@ -765,11 +765,19 @@ button {
 }
 /******************articles********************/
 .articles-section {
+  position: relative;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+.articles-section span {
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: var(--color-text);
+  top: 90px;
 }
 .articles-bl {
   margin-top: 95px;
@@ -783,7 +791,7 @@ button {
   }
 }
 
-.articles-first {
+/*.articles-first {
   display: none;
 }
 .articles-second {
@@ -797,7 +805,7 @@ button {
 }
 .articles-fifth {
   display: block;
-}
+}*/
 
 .articles-bottom {
   display: flex;
