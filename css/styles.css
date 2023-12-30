@@ -937,6 +937,7 @@ button {
   display: flex;
   justify-content: space-between;
   background-color: var(--background-color);
+  padding: 0px 15px;
   
 }
 @media screen and (min-width: 1440px){
