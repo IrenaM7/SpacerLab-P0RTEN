@@ -213,6 +213,7 @@ button {
   z-index: 2;
 }
 .menu {
+  display: none;
   position: absolute;
   right: -50%;
   top: 0;
@@ -225,6 +226,7 @@ button {
   display: block;
 }
 .head.open .menu {
+  display: block;
   transform: translateX(-225%);
 }
 @media screen and (min-width: 768px) {
@@ -602,6 +604,9 @@ button {
     max-width: 936px;
   }
 }
+ .zegarek-bloc.image{
+  background: rgba(25, 27, 28, 0.50);
+ }
 /******************new-goods*********************/
 .new-goods {
   position: relative;
