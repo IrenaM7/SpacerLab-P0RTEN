@@ -878,7 +878,7 @@ button {
 /********************footer******************/
 .footer-section {
  
- /* background: linear-gradient(0deg, rgba(15, 15, 15, 0.85) 0%, rgba(15, 15, 15, 0.85) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat, #C4C4C4;*/
+ 
   background-image: url(../images/Rectangle\ 15\ .jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -968,6 +968,7 @@ button {
 .fmail {
   width: 210px;
   margin-top: 26px;
+  margin-bottom: 10px;
   border: none;
   background-color:var(--hf-background-color); 
   height: 42px;
@@ -975,3 +976,4 @@ button {
 
  
 }
+ 
