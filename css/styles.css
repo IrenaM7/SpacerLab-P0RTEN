@@ -78,6 +78,7 @@ button {
   text-transform: uppercase;
   border-color: var(--color-text);
   padding: 12px 27px;
+  cursor: pointer;
 }
 
 .container {
@@ -324,7 +325,7 @@ button {
     rgba(15, 15, 15, 0.50) 100%),
    url(../images/Rectangle\ 8\ .jpg);
   background-repeat: no-repeat;
-  background-position: center center; 
+ /* background-position: center center; */
   background-size: cover;   
 }
 
