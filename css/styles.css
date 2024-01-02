@@ -219,7 +219,7 @@ button {
   right: -50%;
   top: 0;
   width: 100px;
-  background-color: transparent;
+  background-color: var(--background-color);
   padding: 140px 20px 20px 20px;
   transition: transform.5s;
 }
@@ -733,22 +733,6 @@ button {
     gap: 0;
   }
 }
-
-/*.articles-first {
-  display: none;
-}
-.articles-second {
-  display: none;
-}
-.articles-third {
-  display: none;
-}
-.articles-fourth {
-  display: none;
-}
-.articles-fifth {
-  display: block;
-}*/
 
 .articles-bottom {
   display: flex;
